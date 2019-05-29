@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand" );
+$color1: #fff;
+$color2: #231f20;
+$color3: #000;
+$color4:#b3c3d1;
+$color5:#9c2545;
+$number1:100%;
+@mixin flex{
+    list-style-type:none;
+    display:flex;
+    justify-content: space-around;
+}
+@mixin flex1{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+@mixin flex3{
+    display:flex;
+    flex-direction: column;
+}
+
+@mixin icon{
+    background-color: $color4;
+    margin-top: 10px;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+@mixin icon1{
+    background-color: $color4;
+    margin-top: 15px;
+    font-size: 30px;
+    padding-bottom: 25px;
+}
+@mixin input{
+    width:100%;
+    font-family: 'Quicksand';
+    background-color: $color2;
+    margin-top: 15px;
+    padding-top: 10px;
+  font-size: 20px;
+  color: #fff;
+  background: none;
+  border: none;
+  border-bottom: 2px solid $color5;
+  outline: 0;
+}
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    font-family: 'Quicksand';
+}
+.color{
+    color:$color5;
+}  
+#menu{
+    width:$number1;
+    min-height: 60px;
+    background-color:$color2;
+    border-bottom: 1px solid $color1;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    margin: 0px auto;
+    display:flex;
+    justify-content: center;
+    z-index:2;
+    #menu1{
+        width:60%;
+              ul{
+                 @include flex;
+                 margin:20px 0px;
+                }
+                  a{
+                    text-decoration: none;
+                    color:$color1;
+                   }
+                    li{
+                       background-color: $color2;
+                      }
+          }            
+     }
+#header{
+    width:$number1;
+    min-height: 500px;
+    margin-top:60px;
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color2;
+    background-image: url("../img/gif12.gif");
+    background-repeat:no-repeat;
+    background-attachment:scroll;
+    background-size: cover;
+background-position: center;
+          #text{
+                 width:55%;
+                  position: absolute;
+                    background-color:$color2;                
+                    h1{
+                        text-align: center;
+                        color: $color1; 
+                        text-shadow: 5px 5px 10px rgba(255,255,255,0.3);
+                       }
+                }                                       
+        }
+#wrapper{
+    width:$number1;
+    padding-bottom:50px;
+    @include flex3;
+            #second{
+                    margin-top:50px;
+                     width:$number1;
+                      @include flex1;     
+                          .first{
+                                   padding:2%;
+                                    width:29%;
+                                    text-align: center;
+                                     border-radius:5%;
+                                        background-color:$color4;
+                                             margin: 20px;
+                        &:hover{box-shadow:8px 8px 5px $color4;}                    
+                              h2{
+                                 font-size:27px;
+                                   padding-bottom: 8px;
+                                    color:$color5;
+                                }
+                                p{
+                                    text-align: justify;
+                                   } 
+                                   .html{
+                                         @include icon;
+                                         color:$color5;
+                                        }
+                                       .sass{
+                                             @include icon;
+                                             color:$color5;
+                                            }
+                                            .rd{
+                                               @include icon1;
+                                               color:$color5;
+                                               }
+                                               .less{
+                                                    padding-bottom:22px;
+                                                    background-color:$color4;
+                                                    margin-top:10px;
+                                                    font-size:30px;
+                                                    color:$color5;
+                                                     }
+                                                      .so{
+                                                          @include icon1;
+                                                          color:$color5;
+                                                         }
+                                                         .css{
+                                                              @include icon;
+                                                              color:$color5;
+                                                             }                   
+                                                      
+                                        }
+                 }
+         }
+#wrapper2{
+	width:$number1;
+	margin-top:60px;
+	margin-bottom:50px;
+	
+            #deny{
+	              margin:50px 0px;
+	              width:$number1;
+	              min-height:400px;
+	              @include flex1;
+                   .description1{
+		                         width: 40%;
+                                 h2{
+                                    text-align: left;
+		                            font-size:24px;
+                                    margin: 1%;
+                                    color:$color5;
+		                           }
+                                   img{
+                                       width:$number1;
+                                      }
+                                       p{  
+                                          text-align:left;
+                                          font-size: 20px;
+                                        }
+                                         &:nth-child(2){
+                                                         padding-top:10px;
+                                                         padding-left:8%;
+                                                        }
+                                }
+                 }
+        }
+    .line{
+        width:90%;
+        margin-left:5%;
+        border:1px solid $color1;
+        box-shadow:8px 8px 5px $color2;
+    }
+    .title{
+           width:$number1;
+	    padding-top:80px;
+    padding-bottom:50px;
+            h1{
+                text-align: center;
+                color:$color5;
+        
+            }
+               h2{ 
+                    text-align: center;
+                    color:$color5;
+                }
+         }
+    #wrapper3{
+        width:$number1;
+       @include flex3;
+                #blockedu{
+                          width:$number1;
+                          @include flex1;
+                          margin: 40px 0px;
+                               .education{
+                                          width:30%;
+                                          margin:20px 0px;
+                                          text-align: center;
+                                          background-color:$color4;
+                                          border:1px solid $color4;
+                                          border-radius:10%;
+                                        &:hover{box-shadow:8px 8px 5px $color4;} 
+                                         padding:3%;
+                                             h2{
+                                                font-size:30px;
+                                                text-align: center;
+                                                padding: 4%;
+                                                 color:$color5;
+                                               }
+                                                 p{
+                                                   font-size:20px;
+                                                   line-height:22px;
+                                                   text-align: center;
+                                                   }
+                                                   .edu{
+                                                        font-size: 50px;
+                                                        color:$color5;
+                                                        }   
+                                         }
+                               }
+         }
+
+#wrapper4{
+    padding:50px 0px;
+          #aboutme{
+                    width:$number1;
+                    padding-top: 40px;
+                    @include flex1;
+                   .info{
+                          width:32%;
+                          img{
+                              width: $number1;
+                              height: $number1;
+                              border-radius: 15%;
+                             }
+                              p{
+                                font-size:19px;
+                               }
+                               a{
+                                text-decoration: none;
+                                color:$color5;
+                               }
+                                 &:nth-child(1){
+                                                padding-top:20px;
+                                                width:50%;
+                                               }
+                         }
+                 }
+        }
+#wrapper5{
+            width:$number1;
+            background-color: $color2;
+            clip-path: polygon(50% 7%, 100% 0, 100% 100%, 0 100%, 0 0);
+            #contactme{
+                       width:100%;
+                       display:flex;
+                        align-items: center;
+                        justify-content: center;
+                        #contactmecenter{
+                                         padding: 50px 0px;
+                                         width:45%;
+                                          input {
+                                              @include input;
+                                        } 
+                                                                            ::placeholder {
+                                                                                           color:$color4;
+                                                                                           font-family: 'Quicksand';
+                                                                                         }
+                                                                                         textarea{
+                                                                                            @include input;
+                                                                                            resize: none; 
+                                                                                         }
+                                                                                 .button{
+                                                                                                     width:20%;
+                                                                                                     margin-top: 15px;
+                                                                                                     margin-left: 80%;
+                                                                                                     background-color: $color5;
+                                                                                                     font-size: 20px;
+                                                                                                     color:$color4;
+                                                                                                     border:$color5;
+                                                                                                     border-radius: 3%;
+                                                                                                     text-align: center;
+                                                                                                     padding: 2%;
+                                                                                                     }
+                                         }
+                        }
+      }
+#footer{
+         width:$number1;
+         background-color:$color2;
+         border-top:2px solid $color4;
+         @include flex1;
+            #copy{
+                  width:20%;
+                    a{
+                       text-decoration: none;
+                       color:$color4;
+                     }
+                      p{
+                         padding: 20px 0px;
+                       }
+                }
+                         #network{
+                                  width:60%;
+                                   ul{
+                                      @include flex;
+                                      padding-top: 15px;
+                                     }
+                                      a{
+                                        text-decoration: none;
+                                        color:$color4;
+                                        font-size: 180%;
+                                        }
+                                 }
+       }
