@@ -20,19 +20,19 @@ $number1:100%;
     flex-direction: column;
 }
 
-@mixin icon{
+@mixin icon($color4:#b3c3d1){
     background-color: $color4;
     margin-top: 10px;
     font-size: 30px;
     padding-bottom: 20px;
 }
-@mixin icon1{
+@mixin icon1($color4:#b3c3d1){
     background-color: $color4;
     margin-top: 15px;
     font-size: 30px;
     padding-bottom: 25px;
 }
-@mixin input{
+@mixin input($color2: #231f20,$color5:#9c2545,$color1:#fff){
     width:100%;
     font-family: 'Quicksand';
     background-color: $color2;
