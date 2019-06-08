@@ -138,15 +138,15 @@ position: center;
                                     text-align: justify;
                                    } 
                                    .html{
-                                         @include icon;
+                                         @include icon(#b3c3d1);
                                          color:$color5;
                                         }
                                        .sass{
-                                             @include icon;
+                                             @include icon(#b3c3d1);
                                              color:$color5;
                                             }
                                             .rd{
-                                               @include icon1;
+                                               @include icon1(#b3c3d1);
                                                color:$color5;
                                                }
                                                .less{
@@ -157,11 +157,11 @@ position: center;
                                                     color:$color5;
                                                      }
                                                       .so{
-                                                          @include icon1;
+                                                          @include icon1(#b3c3d1);
                                                           color:$color5;
                                                          }
                                                          .css{
-                                                              @include icon;
+                                                              @include icon(#b3c3d1);
                                                               color:$color5;
                                                              }                   
                                                       
@@ -301,14 +301,14 @@ position: center;
                                          padding: 50px 0px;
                                          width:45%;
                                           input {
-                                              @include input;
+                                              @include input(#231f20,#9c2545,#fff);
                                         } 
                                                                             ::placeholder {
                                                                                            color:$color4;
                                                                                            font-family: 'Quicksand';
                                                                                          }
                                                                                          textarea{
-                                                                                            @include input;
+                                                                                            @include input(#231f20,#9c2545,#fff);
                                                                                             resize: none; 
                                                                                          }
                                                                                  .button{
